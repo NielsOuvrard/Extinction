@@ -8,3 +8,36 @@
   font-size: 2em;
   text-align: center;
 }
+
+:root {
+  --dark-color: #004b6c;
+  --light-color: #0099ff;
+}
+
+svg {
+  cursor: pointer;
+}
+
+#darkGroup {
+  fill: var(--dark-color);
+}
+
+#lightGroup {
+  fill: var(--light-color);
+}
+
+#darkGroup,
+#lightGroup {
+  transition: all 0.3s ease;
+}
+#darkGroup {
+  transform: translateX(-100%);
+}
+
+svg:hover #lightGroup {
+  transform: translateX(10%);
+}
+
+svg:hover #darkGroup {
+  transform: translateX(30%);
+}
