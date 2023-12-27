@@ -4,9 +4,9 @@ import './Home.css';
 
 const Home: React.FC = () => {
     return (
-        <div>
+        <div className="home">
             <Header />
-            <h1>Welcome, user!</h1>
+            <h1 className="home-text">Home</h1>
         </div>
     );
 };

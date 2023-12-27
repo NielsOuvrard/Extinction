@@ -1,9 +1,10 @@
-div {
+.home {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
-h1 {
+.home-text {
   color: #333;
   font-size: 2em;
+  text-align: center;
 }

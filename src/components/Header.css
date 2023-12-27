@@ -1,23 +1,27 @@
-header {
+.header {
   background-color: #f8f9fa;
   padding: 20px 0;
+}
 
-  nav {
-    ul {
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
+.header-nav {
+  width: 100%;
+}
 
-      li {
-        a {
-          text-decoration: none;
-          color: #333;
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
 
-          &:hover {
-            color: #007bff;
-          }
-        }
-      }
-    }
+.header-nav-list-item {
+  margin: 0 10px;
+}
+
+.header-nav-list-item-link {
+  text-decoration: none;
+  color: #333;
+
+  &:hover {
+    color: #007bff;
   }
 }

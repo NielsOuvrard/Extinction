@@ -1,14 +1,14 @@
-div {
+.not-found {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
-h1 {
+.not-found-title {
   color: #333;
   font-size: 2em;
 }
 
-p {
+.not-found-text {
   color: #666;
   font-size: 1.2em;
 }

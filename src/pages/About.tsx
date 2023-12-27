@@ -4,10 +4,10 @@ import './About.css';
 
 const About: React.FC = () => {
     return (
-        <div>
+        <div className="about">
             <Header />
-            <h1>About Us</h1>
-            <p>This is some information about our application.</p>
+            <h1 className="about-title">About Us</h1>
+            <p className="about-text">This is some information about our application.</p>
         </div>
     );
 };

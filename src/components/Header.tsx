@@ -4,16 +4,15 @@ import './Header.css';
 
 const Header: React.FC = () => {
     return (
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
+        <header className="header">
+            <nav className="header-nav">
+                <ul className="header-nav-list">
+                    <li className="header-nav-list-item">
+                        <Link to="/" className="header-nav-list-item-link">Home</Link>
                     </li>
-                    <li>
+                    <li className="header-nav-list-item">
                         <Link to="/about">About</Link>
                     </li>
-                    {/* Add more links here */}
                 </ul>
             </nav>
         </header>
