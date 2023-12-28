@@ -1,0 +1,16 @@
+.flashing {
+  color: #0099ff;
+  animation: flash linear 2s infinite;
+}
+
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 0.5;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
