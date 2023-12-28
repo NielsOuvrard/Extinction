@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import './CaseImage.scss';
+import { useInView } from 'react-intersection-observer';
 
 
 interface CaseImageProps {
@@ -9,8 +10,11 @@ interface CaseImageProps {
 }
 
 const CaseImage: React.FC<CaseImageProps> = ({ src, alt, children }) => {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+    });
     return (
-        <div className="container-image">
+        <div className={`container-image ${inView ? 'visible' : ''}`} ref={ref}>
             <img src={src} alt={alt} className="image-main" />
             {children}
         </div>
