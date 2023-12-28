@@ -5,9 +5,17 @@ import './Home.scss';
 import CaseImage from '../components/CaseImage';
 import GroupCard from '../components/GroupCard';
 
+// * images case
+import imageFirst from '../assets/first.png';
+import imageSecond from '../assets/second.png';
+import imageThird from '../assets/third.png';
+
 import imageCoffee from '../assets/coffee.png';
 import imageIndoor from '../assets/tree-indoor.png';
+
 import myImage from '../assets/big_image.png';
+
+// * images elements
 import cercle from '../assets/cercle.svg';
 import libellule from '../assets/libellule.png';
 
@@ -20,10 +28,14 @@ const Home: React.FC = () => {
 
             <div className="home-comic">
                 <GroupCard>
-                    <CaseImage src={imageCoffee} alt="Image alt text">
-                    </CaseImage>
-                    <CaseImage src={imageIndoor} alt="Image alt text">
-                    </CaseImage>
+                    <CaseImage src={imageFirst} alt="Image alt text" />
+                    <CaseImage src={imageSecond} alt="Image alt text" />
+                    <CaseImage src={imageThird} alt="Image alt text" />
+                </GroupCard>
+
+                <GroupCard>
+                    <CaseImage src={imageCoffee} alt="Image alt text" />
+                    <CaseImage src={imageIndoor} alt="Image alt text" />
                 </GroupCard>
                 <CaseImage src={myImage} alt="Image alt text">
                     <img src={cercle} className="flashing circle" alt="logo" style={{
