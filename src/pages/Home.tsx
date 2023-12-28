@@ -1,7 +1,10 @@
 import React from 'react';
 import Header from '../components/Header';
 import './Home.scss';
+
 import CaseImage from '../components/CaseImage';
+import GroupCard from '../components/GroupCard';
+
 import imageCoffee from '../assets/coffee.png';
 import imageIndoor from '../assets/tree-indoor.png';
 import myImage from '../assets/big_image.png';
@@ -18,10 +21,12 @@ const Home: React.FC = () => {
 
             <div className="home-comic">
 
-                <CaseImage src={imageCoffee} alt="Image alt text">
-                </CaseImage>
-                <CaseImage src={imageIndoor} alt="Image alt text">
-                </CaseImage>
+                <GroupCard>
+                    <CaseImage src={imageCoffee} alt="Image alt text">
+                    </CaseImage>
+                    <CaseImage src={imageIndoor} alt="Image alt text">
+                    </CaseImage>
+                </GroupCard>
                 <CaseImage src={myImage} alt="Image alt text">
                     <img src={cercle} className="flashing circle" alt="logo" style={{
                         top: '50%',
