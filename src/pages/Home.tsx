@@ -9,7 +9,7 @@ import imageCoffee from '../assets/coffee.png';
 import imageIndoor from '../assets/tree-indoor.png';
 import myImage from '../assets/big_image.png';
 import cercle from '../assets/cercle.svg';
-
+import libellule from '../assets/libellule.png';
 
 const Home: React.FC = () => {
     return (
@@ -18,9 +18,7 @@ const Home: React.FC = () => {
             <h1 className="title">Home</h1>
             <h2 className="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
 
-
             <div className="home-comic">
-
                 <GroupCard>
                     <CaseImage src={imageCoffee} alt="Image alt text">
                     </CaseImage>
@@ -40,7 +38,13 @@ const Home: React.FC = () => {
                         position: 'absolute',
                         width: '10%'
                     }} />
+                    <img src={libellule} className="libellule" alt="logo" style={{
+                        width: '10%',
+                        scale: '3',
+                        position: 'absolute'
+                    }} />
                 </CaseImage>
+
             </div>
         </div>
     );
