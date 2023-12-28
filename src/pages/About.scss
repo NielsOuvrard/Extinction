@@ -1,37 +1,11 @@
 .about {
   text-align: center;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-self: start;
 }
 
 .about-title {
   color: #333;
   font-size: 2em;
-}
-
-.about-image {
-  position: relative;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-  width: 100%;
-  height: auto;
-  max-width: 600px;
-
-  .about-image-main {
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-  }
-
-  .circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10%;
-  }
+  text-align: center;
+  margin: 0;
+  padding: 0.4em;
 }
