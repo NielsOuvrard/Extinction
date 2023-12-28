@@ -25,3 +25,20 @@
   justify-content: center;
   margin: 1em;
 }
+
+.libellule {
+  position: absolute;
+  width: 10%;
+  right: -10%;
+  top: 0;
+  animation: moveRight 4s infinite linear;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateY(100%) translateX(-400%);
+  }
+}
