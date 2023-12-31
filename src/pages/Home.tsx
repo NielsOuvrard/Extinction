@@ -4,6 +4,7 @@ import './Home.scss';
 
 import CaseImage from '../components/CaseImage';
 import GroupCard from '../components/GroupCard';
+import TryLibellule from './TryLibellule'
 
 // * images case
 import imageFirst from '../assets/first.png';
@@ -50,11 +51,7 @@ const Home: React.FC = () => {
                         position: 'absolute',
                         width: '10%'
                     }} />
-                    <img src={libellule} className="libellule" alt="logo" style={{
-                        width: '10%',
-                        scale: '3',
-                        position: 'absolute'
-                    }} />
+                    <TryLibellule src={libellule} alt="Image alt text" class_name="libellule" />
                 </CaseImage>
 
             </div>
