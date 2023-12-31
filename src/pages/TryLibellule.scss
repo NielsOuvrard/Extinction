@@ -1,0 +1,10 @@
+.libellule {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  //   background-color: #3498db; /* You can change the background color */
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.5s ease; /* Add a transition for a smoother movement */
+}
